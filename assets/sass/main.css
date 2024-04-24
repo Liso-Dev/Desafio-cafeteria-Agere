@@ -1,0 +1,229 @@
+body {
+  font-family: "PT Mono", monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Mono", monospace;
+}
+
+p {
+  font-family: "PT Mono", monospace;
+}
+
+.main-header {
+  font-family: "PT Mono", monospace;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 10px;
+  color: white;
+}
+.main-header .header-left {
+  display: flex;
+  align-items: center;
+}
+.main-header .header-left img {
+  width: 50px;
+  height: auto;
+  margin-right: 5rem;
+}
+.main-header .header-left nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.main-header .header-left nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+.main-header .header-left nav ul li a {
+  text-decoration: none;
+  color: #989797;
+  transition: color 0.3s;
+}
+.main-header .header-left nav ul li a:hover {
+  color: #000000;
+}
+.main-header .header-right button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 12rem;
+}
+.main-header .header-right button.primary-button {
+  background-color: #fff;
+  color: #000000;
+  opacity: 50%;
+}
+.main-header .header-right button.primary-button:hover {
+  opacity: 100%;
+}
+.main-header .header-right button.secondary-button {
+  background-color: #4CA866;
+  color: white;
+  border: 0;
+}
+.main-header .header-right button.secondary-button:hover {
+  background-color: #9DCFAB;
+  color: black;
+}
+
+.main-section {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+.main-section .image-container {
+  width: 75%;
+  height: 100%;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+.main-section .image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-section .image-container .overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  left: 50%;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  z-index: 2;
+}
+.main-section .image-container .overlay .boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-section .image-container .overlay .boxes .box {
+  padding: 5%;
+  text-align: center;
+  flex: 1;
+}
+.main-section .image-container .overlay .boxes .box h2 {
+  font-size: 40px;
+}
+.main-section .image-container .overlay .boxes .box p {
+  font-size: 20px;
+}
+.main-section .text-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 60%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding-left: 2%;
+}
+.main-section .text-overlay h1 {
+  font-size: 80px;
+}
+.main-section .text-overlay h2 {
+  font-size: 30px;
+}
+.main-section .arrow-container {
+  position: absolute;
+  bottom: 90px;
+  right: 330px;
+  width: 150px;
+  height: 150px;
+  z-index: 3;
+}
+.main-section .yellow-box {
+  width: 100%;
+  height: 100%;
+  background-color: #EACB31;
+  position: relative;
+}
+.main-section .yellow-box .orange-box {
+  width: 100%;
+  height: 100%;
+  background-color: #E4572E;
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  transform: translate(-5%, -5%);
+  display: flex;
+  justify-content: center;
+}
+.main-section .yellow-box .orange-box .bi-arrow-right-short {
+  color: white;
+  align-items: center;
+  font-size: 600%;
+}
+
+.footer-section {
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 1vw 0;
+  z-index: 1000;
+}
+.footer-section .left-content {
+  padding: 30px;
+  width: 30vw;
+}
+.footer-section .left-content h3 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.footer-section .left-content p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.footer-section .right-content {
+  position: relative;
+}
+.footer-section .right-content .map-image {
+  position: absolute;
+  width: 30vw;
+  height: auto;
+  z-index: 4;
+}
+.footer-section .right-content .map-fondo {
+  position: absolute;
+  top: -1vw;
+  right: -42vw;
+  width: 40vw;
+  height: 14vw;
+  background-color: #3C91E6;
+  z-index: 1;
+}
+.footer-section .right-content .right-image-1 {
+  position: absolute;
+  top: -1vw;
+  right: -42vw;
+  width: 10vw;
+  height: 12vw;
+  z-index: 3;
+}
+.footer-section .right-content .right-image-2 {
+  position: absolute;
+  top: -1vw;
+  right: -69vw;
+  width: 35vw;
+  height: auto;
+  z-index: 2;
+}/*# sourceMappingURL=main.css.map */
